@@ -11,6 +11,7 @@ import { ItemsListComponent } from './inventory/items-list/items-list.component'
 import { AppRoutingModule } from './app-routing.module';
 import { ItemDisplayComponent } from './inventory/item-display/item-display.component';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     InventoryComponent,
     ItemComponent,
     ItemsListComponent,
-    ItemDisplayComponent
+    ItemDisplayComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
