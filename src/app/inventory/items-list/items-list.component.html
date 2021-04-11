@@ -1,0 +1,25 @@
+<div id="outerMostDiv" class="row border rounded">
+  <div id="itemListDiv" class="col-xs-12">
+    <div id="itemDiv" class="row" *ngFor="let currItem of items">
+      <a
+      [item]="currItem"
+      (click)="onSelected(currItem)">
+        <div class="pull-left col-xs-9">
+          <h4 class="list-group-item-heading">{{ currItem.title }}</h4>
+        </div>
+        <span class="pull-right col-xs-3">
+              <img
+                [src]="currItem.imagePath"
+                alt="{{ currItem.name }}"
+                class="img-responsive"
+                >
+            </span>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="btnDiv" class="row text-center">
+  <div class="col-xs-12 justify-content-center">
+    <button class="btn btn-primary btn-block btn-lg" routerLink="/addItem"><i class="material-icons">post_add</i>Add Item</button>
+  </div>
+</div>

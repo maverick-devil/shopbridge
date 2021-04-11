@@ -1,0 +1,32 @@
+<div *ngIf="selectedItem; else infoText">
+    <div class="col-md-7">
+      <div>
+        <h2>{{selectedItem.title}}</h2>
+      </div>
+      <hr>
+      <div id="description">
+        <p>{{selectedItem.description}}</p>
+      </div>
+      <div>
+        <p class="h4">Quantity: {{selectedItem.quantity}}</p>
+        <p class="h4">Price: {{selectedItem.price}}</p>
+      </div>
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group btn-group-lg" role="group">
+          <button type="button" class="btn btn-secondary" (click)="onUpdate()"><i class="material-icons">edit</i> <span>Edit Item</span></button>
+        </div>
+        <div class="btn-group btn-group-lg" role="group">
+          <button type="button" class="btn btn-danger" (click)="onDelete()"><i class="material-icons">delete</i><span>Delete Item</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img [src]="selectedItem.imagePath">
+    </div>
+</div>
+
+<ng-template #infoText>
+  <div>
+    <h4>Please select an item.</h4>
+  </div>
+</ng-template>

@@ -9,7 +9,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item" [ngClass]="{active: idx === 1}" *ngFor="let element of carousel; let idx = index">
-        <img [src]="element.imagePath" alt="First slide" style="width: 960px; height: 540px;">
+        <img [src]="element.imagePath" alt="First slide">
         <div class="container">
           <div class="carousel-caption">
             <h3>{{ element.caption }}</h3>

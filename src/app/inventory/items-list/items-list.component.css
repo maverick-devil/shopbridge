@@ -1,0 +1,24 @@
+#outerMostDiv {
+  height: 480px;
+  overflow: auto;
+}
+
+#itemListDiv {
+  overflow: auto;
+  padding: 10px;
+}
+
+#itemDiv {
+  height: 100px;
+}
+
+img {
+  max-height: 50px;
+}
+
+#btnDiv {
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}

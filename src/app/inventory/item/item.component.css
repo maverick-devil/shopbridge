@@ -1,0 +1,14 @@
+div img{
+  display: block;
+  margin: auto;
+  position: relative;
+  height: 320px;
+}
+
+div.container {
+  display: block;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

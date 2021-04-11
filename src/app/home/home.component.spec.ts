@@ -22,4 +22,8 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it('should assign carousel an array', () => {
+  //   expect(component.ngOnInit).
+  // });
 });

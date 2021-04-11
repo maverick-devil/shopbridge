@@ -1,0 +1,13 @@
+div.col-md-7 div {
+  height: 100px;
+}
+
+#description {
+  height: 200px;
+  overflow: auto;
+}
+
+div img {
+  padding-top: 30px;
+  width: 280px;
+}
